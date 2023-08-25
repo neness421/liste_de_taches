@@ -1,0 +1,15 @@
+{% load static %}
+<html>
+    <head>
+        <title>Gestionnaire de tâches</title>
+        <link rel="stylesheet" href="{% static 'gestion_taches/style.css' %}" />
+    </head>
+    <body>
+        <nav>
+            <a href="{% url 'home' %}">Accueil</a>
+        </nav>
+
+        {% block content %}{% endblock %}
+
+    </body>
+</html>
