@@ -1,0 +1,16 @@
+{% extends 'gestion_taches/base.html' %}
+
+{% block content %}
+
+<h1>{{ tache.titre }}</h1>
+
+<ul>
+    <li>Auteur: {{ tache.auteur }}</li>
+    <li>Statut: {{ tache.active }}</li>
+    <li>Date de création: {{ tache.date_creation }}</li>
+    <li>Date de cloture: {{ tache.date_cloture }}</li>
+</ul>
+
+<p>{{ tache.description }}</p>
+
+{% endblock %}

@@ -21,4 +21,6 @@ from gestion_taches import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.home, name='home'),
+    path('ajout/', views.ajout, name='ajout'),
+    path('tache/<int:id>/', views.tache_detail, name="tache_detail")
 ]
